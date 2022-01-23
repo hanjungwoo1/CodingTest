@@ -7,8 +7,8 @@ for Coding Test in Python3
 
 ### 1. level 1
 ``` python
-    from itertools import combinations
-    A = list(combinations(nums, 3))
-    # 3가지 선택하기
+from itertools import combinations
+A = list(combinations(nums, 3))
+# 3가지 선택하기
 ```
      
