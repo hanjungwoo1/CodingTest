@@ -20,10 +20,17 @@ column = int(ord(input_data[0])) - int(ord('a')) + 1
 
 ##2. 프로그래머스
 
-### 1. level 1
+### level 1
 ``` python
 from itertools import combinations
 A = list(combinations(nums, 3))
 # 3가지 선택하기
+```
+
+### level 2
+```python
+for x in range(x, y, z):
+    print(x)
+# x부터 y까지 z씩 상승
 ```
      
