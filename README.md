@@ -1,7 +1,7 @@
 # CodingTest
 for Coding Test in Python3
 
-##1. 이것이 취업을 위한 코딩 테스트다
+## 1. 이것이 취업을 위한 코딩 테스트다
 
 ### Chapter 4 구현
 - 4-2.py
@@ -18,7 +18,7 @@ column = int(ord(input_data[0])) - int(ord('a')) + 1
 ```
 
 
-##2. 프로그래머스
+## 2. 프로그래머스
 
 ### level 1
 ``` python
