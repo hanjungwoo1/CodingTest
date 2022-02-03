@@ -29,6 +29,13 @@ array = sorted(array, key=lambda student: student[1])
 {} = 딕셔너리, Key = value
 ```
 
+### Chapter 7 이진 탐색
+- 7-4.py 빠르게 입력받기
+```python
+import sys
+input_data = sys.stdin.readline().rstrip()
+```
+
 ## 2. 프로그래머스
 
 ### level 1
