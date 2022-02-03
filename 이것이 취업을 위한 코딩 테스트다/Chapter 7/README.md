@@ -35,4 +35,4 @@
    - 7-7.py 답안 예시(집합 자료형 이용)
 
 # 3. 떡볶이 떡 만들기
-   - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)7-8.py 답안 예시
+   - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 7-8.py 답안 예시
