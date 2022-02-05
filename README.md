@@ -36,6 +36,25 @@ import sys
 input_data = sys.stdin.readline().rstrip()
 ```
 
+### Chpater 8 다이나믹 프로그래밍
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 제일 중요 부분
+- 8-5.py
+```python
+d[i] = min(d[i], d[i // 2] + 1)
+```
+- 8-6.py
+```python
+d[i] = max(d[i - 1], d[i - 2] + array[i])
+```
+- 8-7.py
+```python
+d[i] = (d[i - 1] + 2 * d[i - 2]) % 796796
+```
+- 8-8.py
+```python
+d[j] = min(d[j], d[j - array[i]] + 1)
+```
+
 ## 2. 프로그래머스
 
 ### level 1
