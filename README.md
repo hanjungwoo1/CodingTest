@@ -75,3 +75,17 @@ for x in range(x, y, z):
 # x부터 y까지 z씩 상승
 ```
      
+
+
+## 3. Backjoon
+
+### 10951 / A+B-4
+ - 입력이 끝나지 않음, 언제 끝날지 모를때 try catch
+```python
+try:
+    while(True):
+        a, b = map(int, input().split())
+        print(a+b)
+except:
+    exit()
+```
