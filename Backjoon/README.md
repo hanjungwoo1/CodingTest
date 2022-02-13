@@ -67,3 +67,6 @@ visited = [False] * n
 - 15652
 
 ### N-Queen
+- 22/02/13
+- 9663
+- https://sso-feeling.tistory.com/415?category=913126
