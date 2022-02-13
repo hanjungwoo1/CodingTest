@@ -1,3 +1,14 @@
+"""
+입력 예시
+2
+홍길동 95
+이순신 77
+
+출력 예시
+
+이순신 홍길동
+"""
+
 # N을 입력받기
 N = int(input())
 
@@ -7,7 +18,7 @@ for i in range(N):
     input_data = input().split()
     array.append([input_data[0], input_data[1]])
 
-print(array)
+
 # 키(key)를 이용하여, 점수를 기준으로 출력
 array = sorted(array, key=lambda student: student[1])
 

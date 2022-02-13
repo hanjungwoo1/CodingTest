@@ -10,14 +10,27 @@ if '3' in str(i) + str(j) + str(k) :
 # 03시 20분 35초이면, '032035'로 만들어 '3'이 포함되는지
 ```
 
-- 4-3.py, 
+- 4-3.py, 문자를 숫자로
 ``` python 
 column = int(ord(input_data[0])) - int(ord('a')) + 1
 # 소문자 input_data[0]이 몇번째 인지
 # ex) b = 2
 ```
 
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 4-4.py, 게임 개발
+
+### Chapter 5 DFS/BFS
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 5-8.py DFS
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 5-9.py BFS
+- 5-10.py 음료수 얼려먹기
+- 5-11.py 미로 탈출
+
 ### Chapter 6 정렬
+- 6-3.py 삽입 정렬 소스코드, 줄어드는 for
+```python
+for j in range(i, 0, -1):
+```
+
 - 6-11.py, 파이썬 라이브러리 sorted by key=lambda
 ```python 
 array = sorted(array, key=lambda student: student[1])
@@ -36,21 +49,22 @@ import sys
 input_data = sys.stdin.readline().rstrip()
 ```
 
+- 7-8.py 
+
 ### Chpater 8 다이나믹 프로그래밍
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 제일 중요 부분
-- 8-5.py
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 8-5.py
 ```python
 d[i] = min(d[i], d[i // 2] + 1)
 ```
-- 8-6.py
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 8-6.py
 ```python
 d[i] = max(d[i - 1], d[i - 2] + array[i])
 ```
-- 8-7.py
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 8-7.py
 ```python
 d[i] = (d[i - 1] + 2 * d[i - 2]) % 796796
 ```
-- 8-8.py
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 8-8.py
 ```python
 d[j] = min(d[j], d[j - array[i]] + 1)
 ```

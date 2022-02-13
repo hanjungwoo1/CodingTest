@@ -1,21 +1,14 @@
-n, m = map(int, input().split())
+from collections import defaultdict
 
-s = []
+data = defaultdict(list)
+
+data['사과'] = "Apple"
+print(data)
 
 
-def dfs(start):
-    if len(s) == m:
-        print(' '.join(map(str, s)))
 
-        return
-
-    for i in range(start, n+1):
-
-        print("start : ", start, "i : ", i," list : ", s)
-        if i not in s:
-            s.append(i)
-            print("append :", s)
-            dfs(i+1)
-            s.pop()
-
-dfs(1)
+list = defaultdict(list)
+list[0].extend(data['사과'])
+print(list)
+list[0].extend([1,2,3])
+print(list[0])
