@@ -73,6 +73,31 @@ d[j] = min(d[j], d[j - array[i]] + 1)
 - 최소 힙을 최대 힙처럼 Tip: 음수 부호를 붙여서 넣었다가, 꺼낸 다음에 다시 음수 부호
 
 
+### Chapter 14 정렬 문제
+- Q. 23 국영수
+- sort에 key=lamda를 적용, 내림차순 오름차순 순서대로 적용하는 법
+```python
+students.sort(key=lambda x: (-int(x[1]), int(x[2]), -int(x[3]), x[0]))
+```
+
+- Q 26. 카드 정렬하기
+```python
+import heapq
+...
+card = []
+
+for _ in range(n):
+    heapq.heappush(card, int(input()))
+
+result = 0
+
+while len(card) != 1:
+    one = heapq.heappop(card)
+    two = heapq.heappop(card)
+...
+```
+
+
 ## 2. 프로그래머스
 
 ### level 1
