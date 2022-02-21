@@ -14,6 +14,7 @@
 
 ## Q 3. 문자열 뒤집기
 ### 1st, 22/2/13 
+- https://www.acmicpc.net/problem/1439
 - 문자열 뒤집기_official.py
 
 ## Q 4. 만들 수 없는 금액
@@ -28,6 +29,6 @@
 
 ## Q 6. 무지의 먹방 라이브
 ### 1st, 22/2/13 half
-
+- https://programmers.co.kr/learn/courses/30/lessons/42891
 - 무지의 먹방 라이브.py
 - 무지의 먹방 라이브_official.py

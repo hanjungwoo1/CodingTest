@@ -91,8 +91,9 @@ def crawl(grid, head_pos, snake_length, snake_dir):
     elif snake_dir == 0:
         new_pos[0] -= 1       # 위쪽 1칸
     else:
-        print(snake_dir)
-        print("direction error")
+        print()
+        # print(snake_dir)
+        # print("direction error")
 
 
     # check, end of map (or) snake crash
@@ -107,7 +108,7 @@ def crawl(grid, head_pos, snake_length, snake_dir):
     if grid[new_pos[0]][new_pos[1]] == -1:
         # head - updated to dir, tail - stop
         grid[new_pos[0]][new_pos[1]] = snake_length
-        print("eat")
+        # print("eat")
     else:
         # 사과를 안먹었을 때, 현재 머리를 한칸 이동 후 tail이 2로 위치 이동
         # head- updated to dir, tail - updated toward 1
@@ -142,11 +143,11 @@ snake_length = 1
 snake_dir = 1           # 1 : east, 2 : south, 3 : west, 0 : north
 
 second = 0
-print("second: ", second)
-print("grid : ", grid)
-print("direction :", snake_dir)
-print("head : ", head_pos)
-print()
+# print("second: ", second)
+# print("grid : ", grid)
+# print("direction :", snake_dir)
+# print("head : ", head_pos)
+# print()
 
 while(direction):
     second = second + 1
@@ -155,7 +156,7 @@ while(direction):
 
     grid, head_pos, snake_length, snake_dir, flag = crawl(grid, head_pos, snake_length, snake_dir)
     if flag == True:
-        print("End : ", second)
+        # print("End : ", second)
         exit()
 
     # check direction
@@ -172,25 +173,25 @@ while(direction):
         direction.appendleft([x, y])
 
 
-    print("second: ", second)
-    print("grid : ", grid)
-    print("direction :", snake_dir)
-    print("head : ", head_pos)
-
-    print()
+    # print("second: ", second)
+    # print("grid : ", grid)
+    # print("direction :", snake_dir)
+    # print("head : ", head_pos)
+    #
+    # print()
 
 while(second < 100):
     second = second + 1
-    print("second: ", second)
+    # print("second: ", second)
     grid, head_pos, snake_length, snake_dir, flag = crawl(grid, head_pos, snake_length, snake_dir)
     if flag == True:
-        print("End : ", second)
+        print(second)
         exit()
 
-    print("grid : ", grid)
-    print("direction :", snake_dir)
-    print("head : ", head_pos)
-    print()
+    # print("grid : ", grid)
+    # print("direction :", snake_dir)
+    # print("head : ", head_pos)
+    # print()
 
 
 ### add 나머지 시간

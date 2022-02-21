@@ -2,18 +2,20 @@
 
 ## Q 15. 특정거리의 도시 찾기
 ### 1st, 22/2/12
-
-- 특정거리도시찾기_official.py
+- https://www.acmicpc.net/problem/18352
+- 특정거리도시찾기_official.py -> 시간 초과?
 
 ## Q 16. 연구소
 ### 1st, 22/2/12
 
+- https://www.acmicpc.net/problem/14502
 - 연구소_official.py
 
 ## Q 17. 경쟁적 전염
-### solve
+### 1st, 22/2/12 solve
 
-- 경쟁적 전염.py
+- https://www.acmicpc.net/problem/18405
+- 경쟁적 전염.py -> 시간 초과
 - 경쟁적 전염_official.py
 
 ## Q 18. 괄호 변환
