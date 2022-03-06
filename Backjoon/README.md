@@ -51,3 +51,12 @@ visited = [False] * n
 - 22/02/13
 - 9663
 - https://sso-feeling.tistory.com/415?category=913126
+
+### 피보나치 함수
+- 22/03/07
+- 1003
+
+2차원 리스트 초기화할 때는 반드시 리스트 컴프리헨션
+```python
+array = [[0] * m for _ in range(n)]
+```

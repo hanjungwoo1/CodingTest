@@ -30,8 +30,10 @@ column = int(ord(input_data[0])) - int(ord('a')) + 1
 ```python
 for j in range(i, 0, -1):
 ```
-
 - 6-11.py, 파이썬 라이브러리 sorted by key=lambda
+```python
+lambda 매개변수 : 표현식
+```
 ```python 
 array = sorted(array, key=lambda student: student[1])
 ```
