@@ -120,7 +120,8 @@ for x in range(x, y, z):
 
 ## 3. Backjoon
 
-### 10951 / A+B-4
+### A+B-4
+ - 10951
  - 입력이 끝나지 않음, 언제 끝날지 모를때 try catch
 ```python
 try:
@@ -130,3 +131,28 @@ try:
 except:
     exit()
 ```
+
+### 최댓값
+- 2562
+```python
+max(num_list)
+num_list.index(data)
+```
+
+### 숫자의 개수
+- 2577
+```python
+list.count(data)
+```
+
+### 평균은 넘겠지
+ - 4344
+```pythonn = int(input())
+print('%.3f' %rate + '%')
+# 40.000%
+# 57.143%
+```
+
+### 색종이 만들기
+ - 2630
+ - 쿼드 트리 방식(+1992)
