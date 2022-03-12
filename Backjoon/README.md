@@ -51,3 +51,70 @@ print('%.3f' %rate + '%')
 ### 쿼드 트리
  - 1992
  - 쿼드 트리 방식
+
+### 가장 긴 증가하는 부분 수열
+ - 11053(n^2), 12015(nlogn), 11054(바이토닉)
+ - LIS(Longest Increasing Subsequence) 알고리즘
+ - 
+```python
+# 11053번
+x = int(input())
+
+arr = list(map(int, input().split()))
+
+dp = [1 for i in range(x)]
+
+for i in range(x):
+    for j in range(i):
+        if arr[i] > arr[j]:
+            dp[i] = max(dp[i], dp[j]+1)
+
+print(max(dp))
+```
+
+```python 
+
+# 12015번
+import bisect
+
+x = int(input())
+arr = list(map(int, input().split()))
+
+dp = [arr[0]]
+
+for i in range(x):
+    if arr[i] > dp[-1]:
+        dp.append(arr[i])
+    else:
+        idx = bisect.bisect_left(dp, arr[i])
+        dp[idx] = arr[i]
+
+print(len(dp))
+
+```
+
+```python
+#11054
+
+x = int(input())
+
+case = list(map(int, input().split()))
+reverse_case = case[::-1]
+
+increase = [1 for i in range(x)] # 가장 긴 증가하는 부분 수열
+decrease = [1 for i in range(x)] # 가장 긴 감소하는 부분 수열(reversed)
+
+for i in range(x):
+    for j in range(i):
+        if case[i] > case[j]:
+            increase[i] = max(increase[i], increase[j]+1)
+        if reverse_case[i] > reverse_case[j]:
+            decrease[i] = max(decrease[i], decrease[j]+1)
+
+result = [0 for i in range(x)]
+for i in range(x):
+    result[i] = increase[i] + decrease[x-i-1] -1
+
+print(max(result))
+
+```
