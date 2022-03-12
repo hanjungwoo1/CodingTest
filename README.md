@@ -156,3 +156,17 @@ print('%.3f' %rate + '%')
 ### 색종이 만들기
  - 2630
  - 쿼드 트리 방식(+1992)
+
+### 가장 긴 증가하는 부분 수열
+ - 11053(n^2), 12015(nlogn), 11054(바이토닉)
+ - LIS(Longest Increasing Subsequence) 알고리즘
+ 
+### RGB거리
+ - 1149
+ - 최소 구하는 점화식
+
+```python
+    arr[i][0] = min(arr[i-1][1], arr[i-1][2]) + arr[i][0]
+    arr[i][1] = min(arr[i-1][0], arr[i-1][2]) + arr[i][1]
+    arr[i][2] = min(arr[i-1][0], arr[i-1][1]) + arr[i][2]
+```
