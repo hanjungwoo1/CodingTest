@@ -7,14 +7,10 @@ arr = list(map(int, input().split()))
 dp = [arr[0]]
 
 for i in range(x):
-    #print("start for :", i)
-
     if arr[i] > dp[-1]:
-        #print("if", arr[i], dp[-1])
         dp.append(arr[i])
     else:
         idx = bisect.bisect_left(dp, arr[i])
-        #print(idx, dp[idx], " to ", arr[i])
         dp[idx] = arr[i]
 
 print(len(dp))
