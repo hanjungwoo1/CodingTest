@@ -30,7 +30,6 @@ a = int(input())
 zero = [1, 0, 1]
 one = [0, 1, 1]
 
-
 def cal(num):
     length = len(zero)
     if length <= num:

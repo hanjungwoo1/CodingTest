@@ -1,35 +1,35 @@
-# # 11053번
-# x = int(input())
-#
-# arr = list(map(int, input().split()))
-#
-# dp = [1 for i in range(x)]
-#
-# for i in range(x):
-#     for j in range(i):
-#         if arr[i] > arr[j]:
-#             dp[i] = max(dp[i], dp[j]+1)
-#
-# print(max(dp))
-
-
-
 # 11053번
-import bisect
-
 x = int(input())
+
 arr = list(map(int, input().split()))
 
-dp = [arr[0]]
+dp = [1 for i in range(x)]
 
 for i in range(x):
-    if arr[i] > dp[-1]:
-        dp.append(arr[i])
-    else:
-        idx = bisect.bisect_left(dp, arr[i])
-        dp[idx] = arr[i]
+    for j in range(i):
+        if arr[i] > arr[j]:
+            dp[i] = max(dp[i], dp[j]+1)
 
-print(len(dp))
+print(max(dp))
+
+
+
+# # 11053번
+# import bisect
+#
+# x = int(input())
+# arr = list(map(int, input().split()))
+#
+# dp = [arr[0]]
+#
+# for i in range(x):
+#     if arr[i] > dp[-1]:
+#         dp.append(arr[i])
+#     else:
+#         idx = bisect.bisect_left(dp, arr[i])
+#         dp[idx] = arr[i]
+#
+# print(len(dp))
 
 # 1. dp를 arr[0]으로 초기화한다.
 # 2. 현재 위치(i)가 이전 위치의 원소들보다 크면 dp에 추가한다.

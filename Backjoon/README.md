@@ -126,3 +126,16 @@ print(max(result))
     arr[i][1] = min(arr[i-1][0], arr[i-1][2]) + arr[i][1]
     arr[i][2] = min(arr[i-1][0], arr[i-1][1]) + arr[i][2]
 ```
+
+### 수 정렬하기2
+ - 2751
+```python
+int(input()) # timeout
+int(sys.stdin.readline())
+
+print(i) # timeout
+sys.stdout.write(str(i)+'\n')
+```
+
+### DFS와 BFS
+ - 1260
