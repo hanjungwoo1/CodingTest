@@ -1,3 +1,9 @@
+"""
+5
+3 2 1 1 9
+"""
+
+
 n = int(input())
 data = list(map(int, input().split()))
 data.sort()

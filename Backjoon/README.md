@@ -211,3 +211,13 @@ dic = {new_data[i] : i for i in range(len(new_data))}
 for x in data:
     print(dic[x], end= " ")
 ```
+
+
+### 백트랙킹
+ - 15649, 
+
+
+
+## 이것이 코딩 테스트다
+### Chapter 11
+ - 문자열 뒤집기, 1439
