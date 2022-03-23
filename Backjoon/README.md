@@ -127,15 +127,6 @@ print(max(result))
     arr[i][2] = min(arr[i-1][0], arr[i-1][1]) + arr[i][2]
 ```
 
-### 수 정렬하기2
- - 2751
-```python
-int(input()) # timeout
-int(sys.stdin.readline())
-
-print(i) # timeout
-sys.stdout.write(str(i)+'\n')
-```
 
 ### DFS와 BFS
  - 1260(Ori, DFS BFS)
@@ -169,4 +160,54 @@ print(*data)
  - 2798, 2231, 7568, 1018, 1436
 
 ### 정렬
- - 2750, 2751
+ - 2750, 2751*, 2752*(메모리), 2108*, 1427, 11650, 11651, 1181, 10814, 18870
+
+#### 수 정렬하기2
+ - 2751, 
+```python
+int(input()) # timeout
+int(sys.stdin.readline())
+
+print(i) # timeout
+sys.stdout.write(str(i)+'\n')
+```
+
+#### 통계학
+ - 2108
+```python
+from collections import Counter
+
+colors = Counter(['blue', 'green', 'red', 'blue','red','blue'])
+
+print(colors)
+# Counter({'blue': 3, 'red': 2, 'green': 1})
+
+print(colors.most_common())
+# [('red', 3), ('blue', 2), ('green', 1)]
+
+print(colors.most_common(2))
+# 가장 많은 것 부터 2개 출력
+# [('red', 3), ('blue', 2)]
+```
+
+#### 단어정렬
+ - 1181
+ - dict 정렬
+```python
+# (item[1], item[0]) -> 두번 정렬 
+# item[1] -> value 정렬
+# item[0] -> key 정렬
+sorted_dict = sorted(dict.items(), key = lambda item : (item[1], item[0]))
+```
+
+#### 좌표압축
+ - 18870
+```python
+# list.index(i) 형태는 시간복잡도 O(N), dict 사용하면 O(1)
+# for x in data:
+#     print(new_data.index(x), end= " ")
+
+dic = {new_data[i] : i for i in range(len(new_data))}
+for x in data:
+    print(dic[x], end= " ")
+```
