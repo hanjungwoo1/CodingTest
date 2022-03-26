@@ -44,78 +44,10 @@ print('%.3f' %rate + '%')
  - 1992
  - 쿼드 트리 방식
 
-### 가장 긴 증가하는 부분 수열
- - 11053(n^2), 12015(nlogn), 11054(바이토닉)
- - LIS(Longest Increasing Subsequence) 알고리즘
-```python
-# 11053번
-x = int(input())
-
-arr = list(map(int, input().split()))
-
-dp = [1 for i in range(x)]
-
-for i in range(x):
-    for j in range(i):
-        if arr[i] > arr[j]:
-            dp[i] = max(dp[i], dp[j]+1)
-
-print(max(dp))
-```
-
-```python 
-
-# 12015번
-import bisect
-
-x = int(input())
-arr = list(map(int, input().split()))
-
-dp = [arr[0]]
-
-for i in range(x):
-    if arr[i] > dp[-1]:
-        dp.append(arr[i])
-    else:
-        idx = bisect.bisect_left(dp, arr[i])
-        dp[idx] = arr[i]
-
-print(len(dp))
-
-```
-
-```python
-#11054
-
-x = int(input())
-
-case = list(map(int, input().split()))
-reverse_case = case[::-1]
-
-increase = [1 for i in range(x)] # 가장 긴 증가하는 부분 수열
-decrease = [1 for i in range(x)] # 가장 긴 감소하는 부분 수열(reversed)
-
-for i in range(x):
-    for j in range(i):
-        if case[i] > case[j]:
-            increase[i] = max(increase[i], increase[j]+1)
-        if reverse_case[i] > reverse_case[j]:
-            decrease[i] = max(decrease[i], decrease[j]+1)
-
-result = [0 for i in range(x)]
-for i in range(x):
-    result[i] = increase[i] + decrease[x-i-1] -1
-
-print(max(result))
-
-```
-
-
 ### DFS와 BFS
  - 1260(Ori, DFS BFS)
  - 2606, 2667, 1012, 2178, 7576, 7569, 1697, 2206*, 7562, 1707*
-
-
+ 
 ### 스택
  - 10828, 10773, 9012, 4949(출력 초과), 1874*
  - 17298*
@@ -125,10 +57,8 @@ print(*data)
 # 3 4 5 6 7
 ```
 
-
 ### 큐, 덱
  - 18258, 2164, 11866
- - 
 
 ### 문자열
  - 11654, 11720, 10809, 2675, 1157, 1152, 2908, 5622*, 2941, 1316*
@@ -203,7 +133,7 @@ for x in data:
  - 11047, 1931, 11399, 1541, 13305*(부분 점수)
 
 ### 동적계획법1
- - 1003, 9184*, 1904(), 9461, 1149, 1463
+ - 1003, 9184*, 1904(), 9461, 1149, 1463, 1932, 11053, 2579*
 
 #### 피보나치 함수
  - 1003
@@ -230,6 +160,70 @@ dp = [0] * (n+1)   # 런타임 에러
     arr[i][1] = min(arr[i-1][0], arr[i-1][2]) + arr[i][1]
     arr[i][2] = min(arr[i-1][0], arr[i-1][1]) + arr[i][2]
 ```
+
+#### 가장 긴 증가하는 부분 수열
+ - 11053(n^2), 12015(nlogn), 11054(바이토닉)
+ - LIS(Longest Increasing Subsequence) 알고리즘
+```python
+# 11053번
+x = int(input())
+
+arr = list(map(int, input().split()))
+
+dp = [1 for i in range(x)]
+
+for i in range(x):
+    for j in range(i):
+        if arr[i] > arr[j]:
+            dp[i] = max(dp[i], dp[j]+1)
+
+print(max(dp))
+```
+
+```python 
+# 12015번
+import bisect
+
+x = int(input())
+arr = list(map(int, input().split()))
+
+dp = [arr[0]]
+
+for i in range(x):
+    if arr[i] > dp[-1]:
+        dp.append(arr[i])
+    else:
+        idx = bisect.bisect_left(dp, arr[i])
+        dp[idx] = arr[i]
+
+print(len(dp))
+```
+
+```python
+#11054
+
+x = int(input())
+
+case = list(map(int, input().split()))
+reverse_case = case[::-1]
+
+increase = [1 for i in range(x)] # 가장 긴 증가하는 부분 수열
+decrease = [1 for i in range(x)] # 가장 긴 감소하는 부분 수열(reversed)
+
+for i in range(x):
+    for j in range(i):
+        if case[i] > case[j]:
+            increase[i] = max(increase[i], increase[j]+1)
+        if reverse_case[i] > reverse_case[j]:
+            decrease[i] = max(decrease[i], decrease[j]+1)
+
+result = [0 for i in range(x)]
+for i in range(x):
+    result[i] = increase[i] + decrease[x-i-1] -1
+
+print(max(result))
+```
+
 
 ## 이것이 코딩 테스트다
 ### Chapter 11
