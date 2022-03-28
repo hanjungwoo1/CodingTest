@@ -1,18 +1,6 @@
 # Backjoon
 ## Cheat Sheet
 
-### N과 M(9)
-- 22/02/13
-- 15663
-```python
-visited = [False] * n
-```
-
-### N-Queen
-- 22/02/13
-- 9663
-- https://sso-feeling.tistory.com/415?category=913126
-
 
 ### 최댓값
 - 2562
@@ -127,7 +115,16 @@ for x in data:
 
 
 ### 백트랙킹
- - 15649, 
+ - 15649, 15650, 15651, 15652, 9663*
+
+#### N과 M(9)
+ - 15663
+```python
+visited = [False] * n
+```
+#### N-Queen
+ - 9663
+ - https://sso-feeling.tistory.com/415?category=913126
 
 ### 그리디 알고리즘
  - 11047, 1931, 11399, 1541, 13305*(부분 점수)
