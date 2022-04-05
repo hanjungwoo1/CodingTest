@@ -54,6 +54,8 @@
 
 ## Q 14. 외벽 점검
 ### 1st, 22/2/20
+### 2st, 22/4/06
+
 
 - https://programmers.co.kr/learn/courses/30/lessons/60062
 - 외벽 점검_official.py
