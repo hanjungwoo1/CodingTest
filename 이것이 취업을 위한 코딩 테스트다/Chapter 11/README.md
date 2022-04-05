@@ -3,6 +3,9 @@
 ## Q 1. 모험가 길드
 ### 1st, 22/2/13 solve
 ### 2st, 22/3/23 solve
+### 3st, 22/4/05 solve
+
+
 - 모험가길드_1.py // opposite problem
 - 모험가길드_2.py
 - 모험가길드_official.py
