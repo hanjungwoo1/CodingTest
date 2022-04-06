@@ -2,7 +2,7 @@
 
 ## Q 7. 럭키 스트레이트
 ### 1st, 22/2/13 solve
-### 2st, 22/4/05 solve -> end
+### 2nd, 22/4/05 solve -> end
 
 - 럭키 스트레이트.py
 - 럭키 스트레이트_2.py
@@ -10,7 +10,7 @@
 
 ## Q 8. 문자열 재정렬
 ### 1st, 22/2/13 solve
-### 2st, 22/4/05 solve -> end
+### 2nd, 22/4/05 solve -> end
 
 - 문자열 재정렬.py
 - 문자열 재정렬_2.py
@@ -18,21 +18,21 @@
 
 ## Q 9. 문자열 압축
 ### 1st, 22/2/14 solve
-### 2st, 22/4/05 solve
+### 2nd, 22/4/05 solve
 
 - https://programmers.co.kr/learn/courses/30/lessons/60057
 - 문자열 압축_official.py
 
 ## Q 10. 자물쇠와 열쇠
 ### 1st, 22/2/15 
-### 2st, 22/4/05
+### 2nd, 22/4/05
 
 - https://programmers.co.kr/learn/courses/30/lessons/60059
 - 자물쇠와 열쇠_official.py
 
 ## Q 11. 뱀
 ### 1st, 22/2/19 solve
-### 2st, 22/4/05 solve
+### 2nd, 22/4/05 solve
 ### 인간승리
 
 - https://www.acmicpc.net/problem/3190
@@ -47,14 +47,14 @@
 
 ## Q 13. 치킨 배달
 ### 1st, 22/2/19 solve
-### 2st, 22/4/05 solve -> end
+### 2nd, 22/4/05 solve -> end
 
 - 치킨 배달.py -> 시간 초과
 - 치킨 배달_official.py 
 
 ## Q 14. 외벽 점검
 ### 1st, 22/2/20
-### 2st, 22/4/06
+### 2nd, 22/4/06
 
 
 - https://programmers.co.kr/learn/courses/30/lessons/60062
