@@ -31,4 +31,5 @@ n = int(input())
 
 antena = sorted(list(map(int, input().split())))
 
+# 중간값이 항상 제일 좋음
 print(antena[(n-1)//2])

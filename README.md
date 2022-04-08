@@ -83,6 +83,7 @@ students.sort(key=lambda x: (-int(x[1]), int(x[2]), -int(x[3]), x[0]))
 ```
 
 - Q 26. 카드 정렬하기
+- 힙 구조 사용법
 ```python
 import heapq
 ...
@@ -98,7 +99,6 @@ while len(card) != 1:
     two = heapq.heappop(card)
 ...
 ```
-
 
 ## 2. 프로그래머스
 
