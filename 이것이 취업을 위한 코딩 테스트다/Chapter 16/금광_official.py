@@ -29,6 +29,8 @@ for tc in range(int(input())):
             left = dp[i][j - 1]
             dp[i][j] = dp[i][j] + max(left_up, left_down, left)
 
+
+    print(dp)
     result = 0
     for i in range(n):
         result = max(result, dp[i][m - 1])
