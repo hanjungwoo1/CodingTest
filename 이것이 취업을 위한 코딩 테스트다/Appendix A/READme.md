@@ -231,5 +231,24 @@ print(math.factorial(5))
 # 120
 ```
 sqrt
-
+```python
+import math
+print(math.sqrt(7))
+# 2.6457513110645907
+```
 gcd
+```python
+import math
+print(math.gcd(14, 21))
+# 7
+```
+pi, e
+```python
+import math
+print(math.pi)
+print(math.e)
+# 3.141592653589793
+# 2.718281828459045
+```
+
+## 자신만의 알고리즘 노트 만들기
