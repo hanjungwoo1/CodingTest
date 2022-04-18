@@ -15,8 +15,6 @@ num_list.index(data)
 list.count(data)
 ```
 
-
-
 ### 평균은 넘겠지
  - 4344
 ```pythonn = int(input())
