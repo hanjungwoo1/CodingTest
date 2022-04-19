@@ -72,4 +72,11 @@ string[::-1]
 ### 다리를 지나는 트럭
 - https://programmers.co.kr/learn/courses/30/lessons/42583
 - 스택, 큐 / Easy
-- 
+
+### H-index
+- https://programmers.co.kr/learn/courses/30/lessons/42747
+- 정렬
+
+### 구명보트
+- https://programmers.co.kr/learn/courses/30/lessons/42885
+- 반대로 생각하기!
