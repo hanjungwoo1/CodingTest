@@ -23,7 +23,6 @@ def solution(people, limit):
                 boat += 1
     return boat
 
-
 # best
 def solution(people, limit) :
     answer = 0
