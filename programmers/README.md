@@ -81,10 +81,29 @@ string[::-1]
 - https://programmers.co.kr/learn/courses/30/lessons/42885
 - 반대로 생각하기!
 
+### 숫자의 표현
+- https://programmers.co.kr/learn/courses/30/lessons/12924
+- for문 포인터 다루기
+
+
+
+
+### 올바른 괄호
+- https://programmers.co.kr/learn/courses/30/lessons/12909
+- solve
+
 ### 최댓값과 최솟값
 - https://programmers.co.kr/learn/courses/30/lessons/12939
 - solve
 
 ### 최솟값 만들기
 - https://programmers.co.kr/learn/courses/30/lessons/12941
+- solve
+
+### 행렬의 곱셈
+- https://programmers.co.kr/learn/courses/30/lessons/12949
+- solve
+
+### 다음 큰 숫자
+- https://programmers.co.kr/learn/courses/30/lessons/12911
 - solve
