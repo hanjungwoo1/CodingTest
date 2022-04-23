@@ -14,6 +14,7 @@ oct(data) # 8진수
 hex(data) # 16진수
 ```
 
+
 문자열 바꾸기 / Not if 
 ```python
 replace(old, new, [count])
