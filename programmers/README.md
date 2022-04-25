@@ -108,3 +108,11 @@ string[::-1]
 ### 다음 큰 숫자
 - https://programmers.co.kr/learn/courses/30/lessons/12911
 - solve
+
+### 프린터
+- https://programmers.co.kr/learn/courses/30/lessons/42587
+- solve
+
+### N개의 최소공배수
+- https://programmers.co.kr/learn/courses/30/lessons/12953
+- solve
