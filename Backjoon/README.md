@@ -15,13 +15,10 @@ num_list.index(data)
 list.count(data)
 ```
 
-
-
-
-
 ### 평균은 넘겠지
  - 4344
-```pythonn = int(input())
+```python
+n = int(input())
 print('%.3f' %rate + '%')
 # 40.000%
 # 57.143%
