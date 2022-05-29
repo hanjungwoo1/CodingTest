@@ -80,3 +80,4 @@ def solution(fuel, powers, distances):
     return max(times)
 
 print(solution(fuel, power, distances))
+
