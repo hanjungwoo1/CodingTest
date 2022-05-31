@@ -81,3 +81,6 @@ def solution(fuel, powers, distances):
 
 print(solution(fuel, power, distances))
 
+
+
+
