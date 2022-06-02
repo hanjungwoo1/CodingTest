@@ -57,6 +57,7 @@ def solution(fuel, powers, distances):
         print("result : ", result, temp_result)
 
 
+
         if result == temp_result:
             print("nothing change")
             break
