@@ -49,6 +49,7 @@ def solution(fuel, powers, distances):
                         if dist >= distances[i]:
                             times[i] = count
 
+
             else:
                 break
         print("times : ", times)
