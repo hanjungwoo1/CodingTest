@@ -1,6 +1,7 @@
 from collections import deque
 
 
+
 def solution(begin, target, words):
     answer = 0
     q = deque()
