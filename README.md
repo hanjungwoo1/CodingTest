@@ -17,11 +17,11 @@ column = int(ord(input_data[0])) - int(ord('a')) + 1
 # ex) b = 2
 ```
 
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 4-4.py, 게임 개발
+- 4-4.py, 게임 개발
 
 ### Chapter 5 DFS/BFS
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 5-8.py DFS
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 5-9.py BFS
+- 5-8.py DFS
+- 5-9.py BFS
 - 5-10.py 음료수 얼려먹기
 - 5-11.py 미로 탈출
 
