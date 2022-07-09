@@ -17,11 +17,11 @@ column = int(ord(input_data[0])) - int(ord('a')) + 1
 # ex) b = 2
 ```
 
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 4-4.py, 게임 개발
+- 4-4.py, 게임 개발
 
 ### Chapter 5 DFS/BFS
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 5-8.py DFS
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 5-9.py BFS
+- 5-8.py DFS
+- 5-9.py BFS
 - 5-10.py 음료수 얼려먹기
 - 5-11.py 미로 탈출
 
@@ -54,19 +54,19 @@ input_data = sys.stdin.readline().rstrip()
 - 7-8.py 
 
 ### Chpater 8 다이나믹 프로그래밍
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 8-5.py
+- 8-5.py
 ```python
 d[i] = min(d[i], d[i // 2] + 1)
 ```
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 8-6.py
+- 8-6.py
 ```python
 d[i] = max(d[i - 1], d[i - 2] + array[i])
 ```
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 8-7.py
+- 8-7.py
 ```python
 d[i] = (d[i - 1] + 2 * d[i - 2]) % 796796
 ```
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 8-8.py
+- 8-8.py
 ```python
 d[j] = min(d[j], d[j - array[i]] + 1)
 ```
