@@ -1,0 +1,34 @@
+import sys
+
+sys.setrecursionlimit(10 ** 7)
+input = sys.stdin.readline
+
+
+def dfs(x):
+    global ans
+    vis[x] = True
+    cycle.append(x)
+    num = arr[x]
+    print("cycle : ", cycle)
+    if vis[num]:
+        if num in cycle:
+            ans += cycle[cycle.index(num):]
+        return
+    else:
+        dfs(num)
+
+
+t = int(input())
+
+for _ in range(t):
+    n = int(input())
+    arr = [0] + list(map(int, input().split()))
+    vis = [False] * (n + 1)
+    ans = []
+
+    for i in range(1, n + 1):
+        if not vis[i]:
+            cycle = []
+            dfs(i)
+
+    print(n - len(ans))
