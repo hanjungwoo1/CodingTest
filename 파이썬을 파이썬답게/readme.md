@@ -225,3 +225,13 @@ answer= [123, 456] * n
 ```
 
 </details>
+
+## 파트6. Itertools / Collections 모듈 
+
+<details>
+<summary></summary>
+
+
+
+
+</details>
