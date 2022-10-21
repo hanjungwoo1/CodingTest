@@ -4,7 +4,8 @@
 
 ## 파트1. Python 꿀팁
 
-<summary>
+<details>
+<summary></summary>
 
 ```python
 def solution(mylist):
@@ -19,12 +20,13 @@ def solution(mylist):
     return list(map(len, mylist))
 ```
 
-</summary>
+</details>
 
 
 ## 파트2. 정수 다루기
 
-<summary>
+<details>
+<summary></summary>
 
 ### 몫과 나머지
 
@@ -64,4 +66,4 @@ base = 5
 answer = int(num, base)
 ```
 
-</summary>
+</details>
