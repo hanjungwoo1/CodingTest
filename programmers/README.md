@@ -4,6 +4,22 @@
 
 
 ## Level 2
+
+### [3차] n진수 게임
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/17687
+```python
+#재귀함수 이용 - 10진수를 n진수로
+def convert(n, base):
+    arr = "0123456789ABCDEF"
+    q, r = divmod(n, base)
+    if q == 0:
+        return arr[r]
+    else:
+        return convert(q, base) + arr[r]
+```
+
+
 ### 비밀지도
 - https://programmers.co.kr/learn/courses/30/lessons/17681
 

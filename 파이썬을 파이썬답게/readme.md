@@ -231,7 +231,136 @@ answer= [123, 456] * n
 <details>
 <summary></summary>
 
+### 곱집합(Cartesian product) 구하기 - product
 
+```python
+import itertools
 
+iterable1 = 'ABCD'
+iterable2 = 'xy'
+iterable3 = '1234'
+print(list(itertools.product(iterable1, iterable2, iterable3)))
+```
+
+### 2차원 리스트를 1차원 리스트로 만들기 - from_iterable
+
+```python
+my_list = [[1, 2], [3, 4], [5, 6]]
+answer = []
+for element in my_list:
+    answer += element
+```
+
+```python
+my_list = [[1, 2], [3, 4], [5, 6]]
+
+# 방법 1 - sum 함수
+answer = sum(my_list, [])
+
+# 방법 2 - itertools.chain
+import itertools
+list(itertools.chain.from_iterable(my_list))
+
+# 방법 3 - itertools와 unpacking
+import itertools
+list(itertools.chain(*my_list))
+
+# 방법 4 - list comprehension 이용
+[element for array in my_list for element in array]
+
+# 방법 5 - reduce 함수 이용 1
+from functools import reduce
+list(reduce(lambda x, y: x+y, my_list))
+
+# 방법 6 - reduce 함수 이용 2
+from functools import reduce
+import operator
+list(reduce(operator.add, my_list))
+
+# 방법 7 - numpy 라이브러리의 flatten 이용
+import numpy as np
+np.array(my_list).flatten().tolist()
+```
+
+### 순열과 조합 - combinations, permutations
+
+```python
+import itertools
+
+pool = ['A', 'B', 'C']
+print(list(map(''.join, itertools.permutations(pool)))) # 3개의 원소로 순열 만들기
+print(list(map(''.join, itertools.permutations(pool, 2)))) # 2개의 원소로 순열 만들기
+```
+
+### 가장 많이 등장하는 알파벳 찾기 - Counter
+
+```python
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 7, 9, 1, 2, 3, 3, 5, 2, 6, 8, 9, 0, 1, 1, 4, 7, 0]
+answer = {}
+for number in my_list:
+    try:
+        answer[number] += 1
+    except KeyError:
+        answer[number] = 1
+
+print(answer[1]) # = 4
+print(answer[3])  # = 3
+print(answer[100])  # =  raise KeyError
+```
+
+```python
+import collections
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 7, 9, 1, 2, 3, 3, 5, 2, 6, 8, 9, 0, 1, 1, 4, 7, 0]
+answer = collections.Counter(my_list)
+
+print(answer[1]) # = 4
+print(answer[3])  # = 3
+print(answer[100]) # = 0
+```
+
+</details>
+
+## 파트7. 기타 
+
+<details>
+<summary></summary>
+
+### for 문과 if문을 한번에 - List comprehension의 if 문
+
+```python
+mylist = [3, 2, 6, 7]
+answer = []
+for number in mylist:
+    if number % 2 == 0:
+        answer.append(number**2) # 들여쓰기를 두 번 함
+```
+
+```python
+mylist = [3, 2, 6, 7]
+answer = [number**2 for number in mylist if number % 2 == 0]
+```
+
+### flag 대신 for-else 사용하기
+
+```python
+    numbers = [int(input()) for _ in range(5)]
+    multiplied = 1
+    for number in numbers:
+        multiplied *= number
+        if math.sqrt(multiplied) == int(math.sqrt(multiplied)):
+            print('found')
+            break
+    else:
+        print('not found')
+```
+
+### 두 변수의 값 바꾸기 - swap
+
+```python
+a = 3
+b = 'abc'
+
+a, b = b, a # 참 쉽죠?
+```
 
 </details>
