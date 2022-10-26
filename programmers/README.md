@@ -5,6 +5,30 @@
 
 ## Level 2
 
+### 가장 큰 정사각형 찾기
+- DP
+
+
+
+### 후보키
+
+```
+add(값) - 집합에 새로운 값을 추가한다. (중복된 값은 무시)
+remove(값) - 전달받은 값을 삭제 (없을 때 에러 메시지를 출력)
+discard(값) - 전달받은 값을 삭제 (없을 때 그냥 무시)
+clear() - 집합에 있는 모든 값을 삭제
+
+isdisjoint() - 두 집합이 공통 원소를 갖지 않는가?
+issubset() - 부분집합(subset)인가?
+issuperset() - 확대집합(superset)인가?
+ - True or False
+
+union() - 합집합을 만들어 리턴
+update() - 합집합을 만들어 원본 데이터를 갱신(수정)
+difference() - 차집합을 만들어 리턴
+intersection() - 교집합을 만들어 리턴
+```
+
 ### [3차] n진수 게임
 
 - https://school.programmers.co.kr/learn/courses/30/lessons/17687
