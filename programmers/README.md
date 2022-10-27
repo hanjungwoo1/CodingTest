@@ -5,6 +5,10 @@
 
 ## Level 2
 
+### 쿼드압축 후 개수 세기
+- https://school.programmers.co.kr/learn/courses/30/lessons/68936
+- 분할정복, 재귀
+
 ### 줄 서는 방법
 - https://school.programmers.co.kr/learn/courses/30/lessons/12936
 - 시간초과, Permutations -> 단순 연산 반복
