@@ -5,6 +5,10 @@
 
 ## Level 2
 
+### 줄 서는 방법
+- https://school.programmers.co.kr/learn/courses/30/lessons/12936
+- 시간초과, Permutations -> 단순 연산 반복
+
 ### 가장 큰 정사각형 찾기
 - DP
 
