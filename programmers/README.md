@@ -5,6 +5,16 @@
 
 ## Level 2
 
+<details>
+<summary>접기/펼치기</summary>
+
+
+### 메뉴 리뉴얼 !
+
+- ** 다시 풀기 **
+- https://school.programmers.co.kr/learn/courses/30/lessons/72411
+
+
 ### 쿼드압축 후 개수 세기
 - https://school.programmers.co.kr/learn/courses/30/lessons/68936
 - 분할정복, 재귀
@@ -134,33 +144,18 @@ string[::-1]
 - https://programmers.co.kr/learn/courses/30/lessons/12924
 - for문 포인터 다루기
 
+</details>
 
 
+## Level 3
 
-### 올바른 괄호
-- https://programmers.co.kr/learn/courses/30/lessons/12909
-- solve
+<details>
+<summary>접기/펼치기</summary>
 
-### 최댓값과 최솟값
-- https://programmers.co.kr/learn/courses/30/lessons/12939
-- solve
 
-### 최솟값 만들기
-- https://programmers.co.kr/learn/courses/30/lessons/12941
-- solve
+### 여행 경로
+- https://school.programmers.co.kr/learn/courses/30/lessons/43164
+- ** 다시풀기 **
 
-### 행렬의 곱셈
-- https://programmers.co.kr/learn/courses/30/lessons/12949
-- solve
 
-### 다음 큰 숫자
-- https://programmers.co.kr/learn/courses/30/lessons/12911
-- solve
-
-### 프린터
-- https://programmers.co.kr/learn/courses/30/lessons/42587
-- solve
-
-### N개의 최소공배수
-- https://programmers.co.kr/learn/courses/30/lessons/12953
-- solve
+</details>
