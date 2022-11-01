@@ -19,7 +19,7 @@
   - Residual Module -> F(x) + x
 
 ### Machine Learning
- -[Machine Learning] (https://github.com/JaeYeopHan/Beginner_for_interview/tree/master/Development_common_sense)
+ -[Machine Learning](https://github.com/hanjungwoo1/CodingTest/tree/main/Interview/ML)
 
 </details>
 

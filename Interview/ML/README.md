@@ -5,7 +5,7 @@
 - supervised Learning : labeled Data
 - unsupervised Learning : not need labeled Data
 
-#### differ from Deep Learning
+#### Machine Learning VS Deep Learning
 
 - Machine Learning : Input -> Feature Extraction -> Classification -> Output
 - Deep Learning : Input -> Feature Extraction + Classification -> Output
