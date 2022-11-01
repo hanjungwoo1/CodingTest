@@ -22,7 +22,7 @@
     - 부여된 가중치가 다음 모델에 영향
     - 잘못 분류된 데이터에 집중하여 새로운 분류 규칙을 만드는 단계를 반복
     - XGBoost, LightGBM
-- 
+
 - Bagging: Bootstrap Aggregation
     - **parallel**
     - 복원 추출 방식으로 데이터를 추출하여 모델을 학습
@@ -33,13 +33,17 @@
 
 #### Confusion Matrix
 
-- True Positive(TP) : 실제 True인 정답을 True라고 예측 (정답)
-- False Positive(FP) : 실제 False인 정답을 True라고 예측 (오답)
-- False Negative(FN) : 실제 True인 정답을 False라고 예측 (오답)
-- True Negative(TN) : 실제 False인 정답을 False라고 예측 (정답)
+![confusion_matrix](images/confusion_matrix.PNG)
 
-- precision $$ TP/TP+FP $$
+    True Positive(TP) : 실제 True인 정답을 True라고 예측 (정답)
+    False Positive(FP) : 실제 False인 정답을 True라고 예측 (오답)
+    False Negative(FN) : 실제 True인 정답을 False라고 예측 (오답)
+    True Negative(TN) : 실제 False인 정답을 False라고 예측 (정답)
 
+- precision 
+  - ![precision](images/precision.PNG)
+- recall
+  - ![recall](images/recall.PNG)
 ### PCA
 
 ### EDA
