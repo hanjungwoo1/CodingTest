@@ -1,5 +1,9 @@
 ### Machine Learning
 
+#### Naive Bayes Classification
+
+
+
 #### 지도 학습 VS 비지도 학습
 
 - supervised Learning : labeled Data
@@ -26,6 +30,16 @@
     - 학습 시킨 모델에 테스트 데이터가 입력된다면, 각 모델별로 예측 값을 만들고 투표(분류)나 평균(회귀)로 최종 예측
     - ex) 랜덤 포레스트
 
+
+#### Confusion Matrix
+
+- True Positive(TP) : 실제 True인 정답을 True라고 예측 (정답)
+- False Positive(FP) : 실제 False인 정답을 True라고 예측 (오답)
+- False Negative(FN) : 실제 True인 정답을 False라고 예측 (오답)
+- True Negative(TN) : 실제 False인 정답을 False라고 예측 (정답)
+
+- precision $$ TP/TP+FP $$
+
 ### PCA
 
 ### EDA
@@ -36,4 +50,6 @@
 
 ### Regression
 
-### Tree
+### Tree VS Regression
+
+
