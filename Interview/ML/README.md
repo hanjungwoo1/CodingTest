@@ -1,20 +1,20 @@
-### Machine Learning
+## Machine Learning
 
-#### Naive Bayes Classification
+### Naive Bayes Classification
+- 
 
 
-
-#### 지도 학습 VS 비지도 학습
+### 지도 학습 VS 비지도 학습
 
 - supervised Learning : labeled Data
 - unsupervised Learning : not need labeled Data
 
-#### Machine Learning VS Deep Learning
+### Machine Learning VS Deep Learning
 
 - Machine Learning : Input -> Feature Extraction -> Classification -> Output
 - Deep Learning : Input -> Feature Extraction + Classification -> Output
 
-#### Boosting VS Bagging
+### Boosting VS Bagging
 
 - Boosting
     - **sequential**
@@ -31,7 +31,7 @@
     - ex) 랜덤 포레스트
 
 
-#### Confusion Matrix
+### Confusion Matrix
 
 ![confusion_matrix](images/confusion_matrix.PNG)
 
@@ -44,6 +44,7 @@
   - ![precision](images/precision.PNG)
 - recall
   - ![recall](images/recall.PNG)
+
 ### PCA
 
 ### EDA
