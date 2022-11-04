@@ -8,6 +8,9 @@
 <details>
 <summary>접기/펼치기</summary>
 
+### [3차] 방금그곡
+- https://school.programmers.co.kr/learn/courses/30/lessons/17683
+- 시간 계산 실패
 
 ### 메뉴 리뉴얼 !
 
