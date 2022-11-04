@@ -1,7 +1,9 @@
 ## Machine Learning
 
 ### Naive Bayes Classification
-- 
+- 나이브 베이즈는 스팸 메일 필터, 텍스트 분류, 감정 분석, 추천 시스템 등에 광범위하게 활용되는 분류 기법
+- feature끼리 서로 독립이라는 조건이 필요
+- [ref](https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-1%EB%82%98%EC%9D%B4%EB%B8%8C-%EB%B2%A0%EC%9D%B4%EC%A6%88-%EB%B6%84%EB%A5%98-Naive-Bayes-Classification)
 
 
 ### 지도 학습 VS 비지도 학습
