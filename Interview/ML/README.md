@@ -42,10 +42,29 @@
     False Negative(FN) : 실제 True인 정답을 False라고 예측 (오답)
     True Negative(TN) : 실제 False인 정답을 False라고 예측 (정답)
 
-- precision 
+
+#### Precision, Recall and Accuracy
+
+- Precision 
   - ![precision](images/precision.PNG)
-- recall
+- Recall
   - ![recall](images/recall.PNG)
+- Trade-off
+  - Precision과 Recall은 Trade-OFF 관계
+  - FN, FP의 Trade-OFF -> Precision과 Recall
+
+#### Accuracy and F1-Score
+
+- Accuracy
+  - ![accuracy](images/accuracy.PNG)
+
+- F1-Score
+  - F1 score는 Precision과 Recall의 조화평균
+  - ![F1-Score](images/F1-score.PNG)
+  - 조화평균 : 산술평균과 다르게 큰 비중이 끼치는 bias를 줄이는 방식
+  - ![F1-Score2](images/F1-score_2.PNG)
+
+### 
 
 ### PCA
 
