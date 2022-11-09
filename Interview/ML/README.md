@@ -12,7 +12,7 @@
 
 </details>
 
-### SVM, Support Vector Machine
+## SVM, Support Vector Machine
 
 <details>
 <summary>Click</summary>
@@ -20,12 +20,12 @@
 - 경계선(Decision Boudary) : Margin을 최대화하는 선을 생성 
 - Robustness : outlier의 영향을 받지 않는다.
 
-#### Kernel Trick
+### Kernel Trick
 
 - Kernel Trick : 저차원 공간(low dimensional Space)을 고차원 공간(High dimensional Space)으로 매핑해주는 작업
 - ![kernel_trick](images/Kernel_Trick.PNG)
 
-#### Kernel, C, Gamma
+### Kernel, C, Gamma
 
 - Kernel : decision boundary 모양 (linear, poly, sigmid, rbf)
 - C : 크면 overfitting(굴곡), 낮으면 underfitting(직선)
@@ -36,7 +36,7 @@
 
 </details>
 
-### 결정 트리, Decision Tree
+## 결정 트리, Decision Tree
 
 <details>
 <summary>Click</summary>
@@ -45,12 +45,12 @@
 - ![decision_tree](images/decision_tree.PNG)
 - 지나치게 많이 하면 오버피팅이 된다
 
-#### 가지치기, Pruning
+### 가지치기, Pruning
 
 - 오버피팅을 막기 위한 전략
 - min_sample_split : 한 노드에 들어있는 최소 데이터 수
 
-#### 알고리즘 : 엔트로피(Entropy), 불순도(Impurity)
+### 알고리즘 : 엔트로피(Entropy), 불순도(Impurity)
 
 - 불순도 : 해당 범주 안에 서로 다른 데이터가 얼마나 섞여 있는지
 - 엔트로피 : 불순도를 수치적으로 나타낸 척도. 
@@ -59,7 +59,7 @@
 - ![entropy](images/entropy.PNG)
 
 
-#### 정보 획득(Information gain)
+### 정보 획득(Information gain)
 
 - 엔트로피가 1인 상태에서 0.7인 상태로 바뀌었다면 정보 획득(information gain)은 0.3
 - Information gain = entropy(parent) - [weighted average]entropy(children)
@@ -68,7 +68,7 @@
 
 </details>
 
-### 랜덤 포레스트, Random Forest
+## 랜덤 포레스트, Random Forest
 
 <details>
 <summary>Click</summary>
@@ -83,7 +83,7 @@
 </details>
 
 
-### K-최근접 이웃 : K-Nearest Neighbor, KNN
+## K-최근접 이웃 : K-Nearest Neighbor, KNN
 
 <details>
 <summary>Click</summary>
@@ -92,7 +92,7 @@
 - KNN의 특징은 훈련이 따로 필요 없다 -> real-time 예측, SVM이나 선형 회귀보다 빠름
 - ![knn](images/KNN.PNG)
 
-#### 거리 계산
+### 거리 계산
 
 1. 유클리드 거리(Euclidean Distance)
 - ![euclidean](images/euclidean.PNG)
@@ -102,7 +102,7 @@
 
 </details>
 
-### K-평균 클러스터링 : K-means Clustering
+## K-평균 클러스터링 : K-means Clustering
 
 <details>
 <summary>Click</summary>
@@ -123,12 +123,12 @@
 
 </details>
 
-### Feature Scaling & Feature Selection
+## Feature Scaling & Feature Selection
 
 <details>
 <summary>Click</summary>
 
-#### Feature Scaling
+### Feature Scaling
 
 - Feature들의 크기, 범위를 정규화시켜주는 것을 말합니다.
 - 정규화 VS 표준화 -> 모두 시각화 해보고 결정해야한다.
@@ -145,7 +145,7 @@
 - Kurtosis(첨도, 뾰족한 정도)
 - Log를 취해주게 되면 큰 숫자를 같은 비율의 작은 숫자로 만들어, 첨도와 왜도가 줄어들면서 정규성이 높아진다.
 
-#### Feature Selection
+### Feature Selection
 
 - 너무 적은 feature를 선택하면 oversimplified 
 - 너무 많은 feature를 선택하면 overfitting
@@ -154,14 +154,14 @@
 
 </details>
 
-### 차원 축소와 PCA(Principal Components Analysis)
+## 차원 축소와 PCA(Principal Components Analysis)
 
 <details>
 <summary>Click</summary>
 
 - 차원 축소 이유 : Feature가 많아질수록 예측 신뢰도가 떨어지고, Overfitting이 발생
 
-#### 차원 축소를 하는 이유
+### 차원 축소를 하는 이유
 
 1. 시각화(visualization)
 - 시각화를 통해 데이터 패턴을 쉽게 인지
@@ -175,7 +175,7 @@
 4. 퍼포먼스 향상
 - 불필요한 Feature들을 제거해 모델 성능 향상에 기여
 
-#### PCA 프로세스
+### PCA 프로세스
 
 1. 데이터 중심 정하기
 2. 데이터의 중심을 원점(0,0)으로 이동하기
@@ -188,13 +188,13 @@
 
 </details>
 
-### 교차 검증(Cross Validation)과 혼동행렬(Confusion Matrix)
+## 교차 검증(Cross Validation)과 혼동행렬(Confusion Matrix)
 
 <details>
 <summary>Click</summary>
 
 - 교차검증은 모델을 평가하는 방법 중 하나
-#### K-fold 교차검증 : K-fold Cross Validation
+### K-fold 교차검증 : K-fold Cross Validation
 
 1. 데이터를 K개로 쪼갠다.
 2. 하나는 검증 데이터, 나머지는 훈련 데이터로 사용해 성능을 구한다.
@@ -204,11 +204,11 @@
 
 단점 : 시간과 메모리
 
-#### Stratified K-fold Cross Validation
+### Stratified K-fold Cross Validation
 
 - Label이 극히 적을 때, TrainSet에 Target이 없는 경우를 방지하여 균일하게 나누는 방식
 
-#### Confusion Matrix
+### Confusion Matrix
 
 ![confusion_matrix](images/confusion_matrix.PNG)
 
@@ -218,7 +218,7 @@
     True Negative(TN) : 실제 False인 정답을 False라고 예측 (정답)
 
 
-#### Precision, Recall and Accuracy
+### Precision, Recall and Accuracy
 
 - Precision 
   - ![precision](images/precision.PNG)
@@ -228,7 +228,7 @@
   - Precision과 Recall은 Trade-OFF 관계
   - FN, FP의 Trade-OFF -> Precision과 Recall
 
-#### Accuracy and F1-Score
+### Accuracy and F1-Score
 
 - Accuracy
   - ![accuracy](images/accuracy.PNG)
@@ -242,12 +242,12 @@
 </details>
 
 
-### 앙상블 학습(Ensemble Learning) : 부스팅(Boosting) VS 배깅(Bagging)
+## 앙상블 학습(Ensemble Learning) : 부스팅(Boosting) VS 배깅(Bagging)
 
 <details>
 <summary>Click</summary>
 
-#### Bagging: Bootstrap Aggregation
+### Bagging: Bootstrap Aggregation
 - **parallel**
 - 복원 추출 방식(Bootstrap)으로 데이터를 추출하여 모델을 학습
 - 같은 과정을 여러번 반복하여 여러 개의 개별 학습 모델을 만듦
@@ -255,7 +255,7 @@
 - ex) 랜덤 포레스트
 - ![bagging](images/bagging.PNG)
 
-#### Boosting
+### Boosting
 - **sequential**
 - 처음 모델이 예측을 하면 그 결과에 따라 데이터에 가중치가 부여
 - 부여된 가중치가 다음 모델에 영향
@@ -263,30 +263,30 @@
 - XGBoost, LightGBM
 - ![boosting](images/boosting.PNG)
 
-#### 차이점
+### 차이점
 - **parallel** vs **sequential**
 - 개별 결정 트리의 낮은 성능이 문제라면 부스팅이 적합, 오버 피팅이 문제라면 배깅이 적합
 
 </details>
 
-### 편향(Bias)과 분산(Variance) Trade-off
+## 편향(Bias)과 분산(Variance) Trade-off
 
 <details>
 <summary>Click</summary>
 
 ![bias_variance](images/bias_variance.PNG)
 
-#### 편향 : Bias
+### 편향 : Bias
 
 - 지나치게 단순한 모델로 인한 Error. 편향이 크면 Under-fitting
 - 편향이 크다 -> 중요한 요소를 놓치고 있다
 
-#### 분산 : Variance
+### 분산 : Variance
 
 - 지나치게 복잡한 모델로 인한 Error. 분산이 크면 Over-fitting
 - 분산이 크다 -> 지나치게 적합, 일반화가 되지 않은 모델
 
-#### 편향-분산 Trade-off
+### 편향-분산 Trade-off
 
 ![bias_variance_trade_off](images/bias_variance_trade_off.PNG)
 
@@ -304,12 +304,12 @@
 
 
 
-### 지도 학습 VS 비지도 학습
+## 지도 학습 VS 비지도 학습
 
 - supervised Learning : labeled Data
 - unsupervised Learning : not need labeled Data
 
-### Machine Learning VS Deep Learning
+## Machine Learning VS Deep Learning
 
 - Machine Learning : Input -> Feature Extraction -> Classification -> Output
 - Deep Learning : Input -> Feature Extraction + Classification -> Output
