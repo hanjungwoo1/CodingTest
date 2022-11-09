@@ -293,13 +293,41 @@
 </details>
 
 
+## 파라미터(Parameter)와 하이퍼 파라미터(Hyper Parameter)
 
+<details>
+<summary>Click</summary>
 
+### 파라미터(Parameter)
 
+    A model parameter is a configuration variable that is internal to the model and whose value can be estimated from data.
 
+    - They are required by the model when making predictions.
+    - They values define the skill of the model on your problem.
+    - They are estimated or learned from data.
+    - They are often not set manually by the practitioner.
+    - They are often saved as part of the learned model.
 
+- 모델 내부적으로 결정되는 값
+- 사용자에 의해 조정되지 않는 값
 
+### 하이퍼 파라미터(Hyper Parameter)
 
+    A model hyperparameter is a configuration that is external to the model and whose value cannot be estimated from data.
+
+    - They are often used in processes to help estimate model parameters.
+    - They are often specified by the practitioner.
+    - They can often be set using heuristics.
+    - They are often tuned for a given predictive modeling problem.
+
+- 모델 외부적으로 결정되는 값
+- 사용자에 의해 조정되는 값, 직접 세팅
+
+</details>
+
+## 에이다 부스트 : AdaBoost
+
+### AdaBoost 개요
 
 
 
