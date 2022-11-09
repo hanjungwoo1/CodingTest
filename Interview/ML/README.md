@@ -65,6 +65,7 @@
 - Information gain = entropy(parent) - [weighted average]entropy(children)
 - 결정 트리 알고리즘은 정보 획득을 최대화하는 방향으로 학습이 진행됩니다. 
 
+
 </details>
 
 ### 랜덤 포레스트, Random Forest
