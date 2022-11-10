@@ -331,6 +331,74 @@
 
 
 
+## 고유값 : eigenvalue, 고유벡터 : eigenvector, 고유값 분해 : eigen decomposition
+
+<details>
+<summary>Click</summary>
+
+- 정방 행렬 A에 대해서 Av = λv를 만족하는 0이 아닌 열벡터 v를 고유 벡터, 상수 λ를 고유값
+- 고유값 분해는 정방 행렬(행과 열의 크기가 같은 행렬)에 대해서만 가능
+
+### 고유값과 고유 벡터 구하기
+
+    (A - λ I) v = 0
+    (A - λ I)의 역행렬이 존재하면 v = 0
+    det(A - λ I) = 0
+
+### 고유값 분해(eigen decomposition)
+
+- ![eigen](images/eigen.png)
+- [ref](https://ko.wikipedia.org/w/index.php?title=%EA%B3%A0%EC%9C%A0%EA%B0%92_%EB%B6%84%ED%95%B4&action=edit&section=1)
+
+### 행렬의 종류
+
+#### 전치 행렬(Tranposed Matrix)
+
+- ![tranpose](images/tranpose.PNG)
+
+#### 단위 행렬(Identity Matrix)
+
+- ![Identity](images/identity.PNG)
+
+#### 역행렬(Inverse Matrix)
+
+- ![inverse](images/inverse.PNG)
+
+#### 직교 행렬(Orthogonal Matrix)
+
+- 행렬 A와 A의 전치 행렬을 곱했을 때 단위 행렬이 된다면, A를 직교 행렬이라고 합니다.
+- ![orthogonal](images/orthogonal.PNG)
+
+#### 대각 행렬(Diagonal Matrix)
+
+- 대각 성분 이외의 모든 성분이 0인 행렬을 대각 행렬
+
+#### 정방 행렬(Square Matrix)
+
+- 열과 행의 개수가 동일한 정렬을 정방 행렬
+
+#### 대칭 행렬(Symmetric Matrix)
+
+- 정사각행렬 A와 A의 전치행렬이 서로 같다면, A를 대칭 행렬
+
+</details>
+
+## 특이값 분해 : Singular Value Decomposition, SVD
+
+<details>
+<summary>Click</summary>
+
+- 고유값 분해 : 정방 행렬
+- 특이값 분해 : 행과 열의 크기가 다른 행렬도 가능, 모든 직각 행렬
+
+
+
+
+
+
+</details>
+
+
 
 ## 지도 학습 VS 비지도 학습
 
