@@ -96,7 +96,6 @@ df['PeriodBetween'] = pd.cut(df['PeriodBetween'], bins=bins, labels=labels)
 
 </details>
 
-
 ## 분산과 표준편차에서 n이 아니라 n-1로 나누는 이유(자유도)
 
 <details>
