@@ -248,6 +248,10 @@ A/B TEST는 마케팅이나 웹 페이지 개선에 많이 쓰이는 테스트 �
 
 </details>
 
+## 최소자승법(OLS)을 활용한 단순 선형 회귀 (Simple Linear Regression)
+
+
+
 
 
 ## reference
