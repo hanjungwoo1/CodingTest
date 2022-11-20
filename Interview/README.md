@@ -1,12 +1,5 @@
 # 인터뷰 정리
 
-## ML / DL
-
-<details>
-<summary>접기/펼치기</summary>
-
-### Deep Learning
-
 #### Vision
 
 - Swin Transformer: Hierarchical VIsion Transformer using Shifted Windows
@@ -18,20 +11,9 @@
   - **Vanishing / Exploding gradient 현상** 을 해결
   - Residual Module -> F(x) + x
 
+
+### Data Science
+ -[Data Science](https://github.com/hanjungwoo1/CodingTest/tree/main/Interview/Data%20Science)
+
 ### Machine Learning
  -[Machine Learning](https://github.com/hanjungwoo1/CodingTest/tree/main/Interview/ML)
-
-</details>
-
-
-## CS
-
-### 알고리즘
-
-
-### 운영체제
-
-### 소프트웨어 공학
-
-
-### 인공지능
