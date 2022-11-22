@@ -23,13 +23,14 @@
   - **Vanishing / Exploding gradient 현상** 을 해결
   - Residual Module -> F(x) + x
 
+### VGG  
 
 
 ### AlexNet
  - "ImageNet Classification with Deep Convolutional Neural Networks", 2012
  - 2012년 ILSVRC 우승
  - 2개의  GPU로 병렬 연산 -> 병렬적인 구조로 설계
- - [alexnet](images/alexnet.PNG)
+ - ![alexnet](images/alexnet.PNG)
 
 ### LeNet
 
@@ -37,7 +38,7 @@
  - CNN의 조상
  - 얀 르쿤(Yann Lecun)
  - Kernel, window size, padding, striding
- - [lenet](images/lenet.PNG)
+ - ![lenet](images/lenet.PNG)
 
 
 
