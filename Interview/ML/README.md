@@ -145,6 +145,19 @@
 - Kurtosis(첨도, 뾰족한 정도)
 - Log를 취해주게 되면 큰 숫자를 같은 비율의 작은 숫자로 만들어, 첨도와 왜도가 줄어들면서 정규성이 높아진다.
 
+4. Regularization
+- W(weight)가 너무 큰 값들을 가지지 않도록 하는 것
+- W가 너무 커지게 되면 과하게 구불한 형태의 함수 -> Overfitting
+
+#### L1 Regularization
+- cost가 작아지는 방향, W값 역시 최소가 되는 방향
+- 특정 Weight을 0으로 수렴하게 하여, 중요한 가중치만 남긴다 -> sparse model
+- 미분이 불가능한 지점 발생
+
+#### L2 Regularization
+- 모든 가중치를 균등하게 작게 유지, 일반적으로 학습시 더 좋은 결과
+- Robust한 방식 -> Outlier에 신경써야 할 때
+
 ### Feature Selection
 
 - 너무 적은 feature를 선택하면 oversimplified 
@@ -153,6 +166,21 @@
 - minize SSE + λ |β| 
 
 </details>
+
+## 경사 하강법(Gradient descent)
+
+<details>
+<summary>Click</summary>
+
+- 함수 값이 낮아지는 방향으로 독립 변수 값을 변형시켜가면서 최종적으로 최소 함수 값을 갖도록 하는 방법
+
+### 목적 (미분 계수가 0인 지점을 찾지 않는 이유)
+- 함수들이 닫힌 형태가 아니거나, 복잡해 미분계수와 근을 계산하기 어려운 경우
+- 실제 미분계수를 계산하는 것보다 gradient descent는 비교적 쉽게 구현
+- 데이터 양이 매우 큰 경우 iterative한 방법을 사용
+
+<details>
+
 
 ## 차원 축소와 PCA(Principal Components Analysis)
 
@@ -401,6 +429,9 @@
  - 대각 행렬은 스케일 변환을 의미
  - 행렬의 특이값(Singular Value) : 행렬로 표현되는 선형 변환의 스케일 변환(Stretch)
 </details>
+
+
+
 
 
 
