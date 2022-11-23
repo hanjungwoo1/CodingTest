@@ -179,7 +179,7 @@
 - 실제 미분계수를 계산하는 것보다 gradient descent는 비교적 쉽게 구현
 - 데이터 양이 매우 큰 경우 iterative한 방법을 사용
 
-<details>
+</details>
 
 
 ## 차원 축소와 PCA(Principal Components Analysis)
