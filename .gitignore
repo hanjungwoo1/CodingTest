@@ -1,0 +1,7 @@
+
+.xray-scanner.inclusions
+.codexray_cpp.xml
+.codexray_work/
+sonar-project.properties
+.sonar/
+codexray_result.json
