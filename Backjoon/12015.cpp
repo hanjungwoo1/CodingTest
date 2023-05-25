@@ -1,3 +1,12 @@
+/*
+LIS 문제 최장길이수열
+Longest Increasing Subsequence
+
+큰거는 하나씩 넣으면서
+크지 않은걸 찾는다면, 그 위치를 바꾼다
+*/
+
+
 #include <iostream>
 #include <vector>
 using namespace std;
